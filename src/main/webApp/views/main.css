@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+html, body, .wrapper {
+  height: 100%;
+}
+
+body {
+  background: url(https://img.freepik.com/premium-vector/sea-background-video-conferencing_23-2148631702.jpg?w=2000) 50% 50% no-repeat;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.wrapper {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://img.freepik.com/premium-vector/sea-background-video-conferencing_23-2148631702.jpg?w=2000);
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 42px;
+  color: white;
+  font-size: 22px;
+  line-height: 200%;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+.button span {
+  position: absolute;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 1;
+}
+.button .border {
+  border: 1px solid #ebff33;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.button .top, .button .bottom, .button .left, .button .right {
+  background-color: #ebff33;
+  height: 1px;
+  width: 0;
+}
+.button .left, .button .right {
+  height: 0;
+  width: 1px;
+}
+.button .top {
+  top: -5px;
+  left: -15px;
+}
+.button .bottom {
+  bottom: -5px;
+  right: -15px;
+}
+.button .left {
+  top: -15px;
+  right: -5px;
+}
+.button .right {
+  bottom: -15px;
+  left: -5px;
+}
+.button:hover {
+  color: #fff;
+}
+.button:hover .border {
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+}
+.button:hover .top, .button:hover .bottom {
+  width: 230px;
+}
+.button:hover .left, .button:hover .right {
+  height: 40px;
+}
+.button:hover .top {
+  left: -5px;
+}
+.button:hover .bottom {
+  right: -5px;
+}
+.button:hover .left {
+  top: -5px;
+}
+.button:hover .right {
+  bottom: -5px;
+}
+.button .text {
+  position: relative;
+  letter-spacing: 0.03em;
+}
+
+/*# sourceMappingURL=main.css.map */
